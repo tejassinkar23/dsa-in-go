@@ -1,5 +1,4 @@
 package main
-
 import "fmt"
 
 // func hasDuplicate(nums []int) bool {
