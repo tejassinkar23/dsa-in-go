@@ -24,12 +24,12 @@ func hasDuplicate1(nums []int) bool {
 	return false
 }
 
-// func main() {
-// 	// fmt.Println("Hello World")
-// 	nums1 := []int{1, 2, 3, 3}
-// 	nums2 := []int{1, 2, 3, 4}
-// 	result1 := hasDuplicate1(nums1)
-// 	result2 := hasDuplicate1(nums2)
-// 	fmt.Println(result1)
-// 	fmt.Println(result2)
-// }
+func main() {
+	// fmt.Println("Hello World")
+	nums1 := []int{1, 2, 3, 3}
+	nums2 := []int{1, 2, 3, 4}
+	result1 := hasDuplicate1(nums1)
+	result2 := hasDuplicate1(nums2)
+	fmt.Println(result1)
+	fmt.Println(result2)
+}
