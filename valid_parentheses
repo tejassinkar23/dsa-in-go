@@ -1,0 +1,21 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func isValid(s string) bool {
+	for strings.Contains(s, "()") || strings.Contains(s, "{}") || strings.Contains(s, "[]") {
+		s = strings.ReplaceAll(s, "()", "")
+		s = strings.ReplaceAll(s, "{}", "")
+		s = strings.ReplaceAll(s, "[]", "")
+	}
+	return s == ""
+}
+
+func main() {
+	s := "[]"
+	result := isValid(s)
+	fmt.Println(result)
+}
