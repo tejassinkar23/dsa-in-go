@@ -1,4 +1,7 @@
+//go:build ignore
+
 package main
+
 import "fmt"
 
 // func hasDuplicate(nums []int) bool {
@@ -12,7 +15,7 @@ import "fmt"
 // 	return false
 // }
 
-func hasDuplicate1(nums []int) bool {
+func hasDuplicate(nums []int) bool {
 	seen := make(map[int]int)
 	for i, num := range nums {
 		if _, found := seen[num]; found {
@@ -24,11 +27,10 @@ func hasDuplicate1(nums []int) bool {
 }
 
 func main() {
-	// fmt.Println("Hello World")
 	nums1 := []int{1, 2, 3, 3}
 	nums2 := []int{1, 2, 3, 4}
-	result1 := hasDuplicate1(nums1)
-	result2 := hasDuplicate1(nums2)
+	result1 := hasDuplicate(nums1)
+	result2 := hasDuplicate(nums2)
 	fmt.Println(result1)
 	fmt.Println(result2)
 }
